@@ -14,4 +14,9 @@ class TokenTestCase(unittest.TestCase):
         tid = self.tid_gen.generate_tid()
         result = m2lexer.tokens.token.Token(tid)
         self.assertIs(type(result), m2lexer.tokens.token.Token)
-        self.assertEqual(tid, result.tid)
+
+    def test_token_tid(self):
+        tid = self.tid_gen.generate_tid()
+        result = m2lexer.tokens.token.Token(tid)
+        self.assertEqual(result.tid, tid)
+
