@@ -1,8 +1,5 @@
 #This imports the token class definition from the token.py file
-#Since both files are in the same dir then we don't need a path
-#if they weren't then you specify the location like:
-# from Documents.CS480.token import token 
-from tokens.token import Token
+from tokens.Token import Token
 
 class SymbolTable:
     """
